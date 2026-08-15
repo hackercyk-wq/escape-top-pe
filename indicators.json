@@ -129,11 +129,11 @@
       }
     ],
     "collected_at": "2026-08-14 20:41:16",
-    "data_source": "eastmoney_http",
+    "data_source": "eastmoney_datacenter (融资余额) + 换手率同口径流通市值",
     "rqye": 259.7,
     "liangrong_total": 26549.7,
     "margin_balance_date": "2026-08-13",
-    "note": "融资余额占流通市值=融资余额/流通市值。融资余额26315.7亿(4429只标的求和,2026-08-13)/流通市值999694.6亿。SCF自动抓取。"
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额26315.7亿（东方财富数据中心，4429只标的求和，数据日2026-08-13）/流通市值999694.6亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": -4662.22,
@@ -218,20 +218,15 @@
       },
       {
         "date": "2026-08-14",
-        "value": 2.55,
-        "amount": 25509.2
-      },
-      {
-        "date": "2026-08-15",
         "value": 2.14,
         "amount": 21428.4
       }
     ],
     "collected_at": "2026-08-14 20:41:16",
-    "data_source": "eastmoney_http",
+    "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)",
     "total_mv": 1145616.2,
-    "data_date": "2026-08-15",
-    "note": "全市场换手率=两市成交额/流通市值。成交21428.4亿/流通市值999694.6亿(东方财富),SCF 2026-08-15自动抓取。"
+    "data_date": "2026-08-14",
+    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额21428.4亿（沪9903.7亿+深11524.7亿），流通市值999694.6亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-08-14，SCF 2026-08-15 自动抓取。"
   },
   "sentiment": {
     "value": 3,
@@ -387,7 +382,7 @@
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "_meta": {
-    "collected_at": "2026-08-15 19:36:43",
+    "collected_at": "2026-08-15 20:05:28",
     "date": "2026-08-15"
   },
   "_scoring": {
@@ -426,8 +421,8 @@
         "status": "warning"
       },
       "sentiment": {
-        "score": 1.2,
-        "weight": 8,
+        "score": 0.8,
+        "weight": 5,
         "ratio": 0.15,
         "status": "normal"
       },
@@ -444,8 +439,8 @@
         "status": "normal"
       },
       "us_yield": {
-        "score": 0.8,
-        "weight": 5,
+        "score": 1.2,
+        "weight": 8,
         "ratio": 0.15,
         "status": "normal"
       }
