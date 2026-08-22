@@ -94,9 +94,9 @@
     "evaluated_at": "2026-08-06"
   },
   "margin_ratio": {
-    "value": 2.66,
-    "margin_balance": 26230.7,
-    "float_mv": 987911.4,
+    "value": 2.65,
+    "margin_balance": 26214.9,
+    "float_mv": 990100.2,
     "trade_ratio": null,
     "threshold": 3,
     "unit": "%",
@@ -142,14 +142,18 @@
       {
         "date": "2026-08-19",
         "value": 26230.7
+      },
+      {
+        "date": "2026-08-20",
+        "value": 26214.9
       }
     ],
     "collected_at": "2026-08-14 20:41:16",
     "data_source": "eastmoney_datacenter (融资余额) + 换手率同口径流通市值",
-    "rqye": 264.5,
+    "rqye": 268.3,
     "liangrong_total": 26549.7,
-    "margin_balance_date": "2026-08-19",
-    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额26230.7亿（东方财富数据中心，4433只标的求和，数据日2026-08-19）/流通市值987911.4亿（与换手率同口径）。SCF 自动抓取。"
+    "margin_balance_date": "2026-08-20",
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额26214.9亿（东方财富数据中心，4434只标的求和，数据日2026-08-20）/流通市值990100.2亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": -4662.22,
@@ -174,12 +178,12 @@
     "evaluated_at": "2026-08-03"
   },
   "turnover_rate": {
-    "value": 2.1,
-    "total_amount": 20793.6,
-    "float_mv": 987911.4,
+    "value": 1.9,
+    "total_amount": 18792.6,
+    "float_mv": 990100.2,
     "threshold": 3,
     "unit": "%",
-    "status": "warning",
+    "status": "normal",
     "trend": "flat",
     "history": [
       {
@@ -256,13 +260,18 @@
         "date": "2026-08-20",
         "value": 2.1,
         "amount": 20793.6
+      },
+      {
+        "date": "2026-08-21",
+        "value": 1.9,
+        "amount": 18792.6
       }
     ],
     "collected_at": "2026-08-14 20:41:16",
     "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)",
-    "total_mv": 1135588.1,
-    "data_date": "2026-08-20",
-    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额20793.6亿（沪10185.7亿+深10608.0亿），流通市值987911.4亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-08-20，SCF 2026-08-21 自动抓取。"
+    "total_mv": 1138486.8,
+    "data_date": "2026-08-21",
+    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额18792.6亿（沪8834.2亿+深9958.4亿），流通市值990100.2亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-08-21，SCF 2026-08-22 自动抓取。"
   },
   "sentiment": {
     "value": 3,
@@ -379,20 +388,20 @@
     "evaluated_at": "2026-08-03"
   },
   "us_yield": {
-    "value": 47.1,
+    "value": 51.3,
     "unit": "bp",
-    "y10": 4.6372,
-    "y2": 4.1665,
-    "y30": 5.1859,
-    "y3m": 3.7967,
-    "spread_2s10s_bp": 47.1,
-    "spread_10y3m_bp": 84.0,
+    "y10": 4.7001,
+    "y2": 4.1875,
+    "y30": 5.244,
+    "y3m": 3.8059,
+    "spread_2s10s_bp": 51.3,
+    "spread_10y3m_bp": 89.4,
     "status": "normal",
-    "trend": "flattening",
+    "trend": "steepening",
     "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率",
     "threshold_type": "qualitative",
     "data_source": "sina bond.finance.sina.com.cn (daily close)",
-    "data_date": "2026-08-20",
+    "data_date": "2026-08-21",
     "history": [
       {
         "date": "2026-08-07",
@@ -421,24 +430,28 @@
       {
         "date": "2026-08-20",
         "value": 47.1
+      },
+      {
+        "date": "2026-08-21",
+        "value": 51.3
       }
     ],
-    "note": "美债10Y-2Y利差 +47.1bp（2026-08-20：10Y=4.637%、2Y=4.167%），曲线正斜率、未倒挂。10Y-3M利差 +84.0bp。",
+    "note": "美债10Y-2Y利差 +51.3bp（2026-08-21：10Y=4.700%、2Y=4.188%），曲线正斜率、未倒挂。10Y-3M利差 +89.4bp。",
     "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动。",
     "sources": [
       "Sina Finance - US Treasury Yield (bond.finance.sina.com.cn)",
       "Federal Reserve / U.S. Treasury"
     ],
-    "evaluated_at": "2026-08-20",
+    "evaluated_at": "2026-08-21",
     "refresh_mode": "auto_sina",
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "_meta": {
-    "collected_at": "2026-08-21 08:00:15",
-    "date": "2026-08-21"
+    "collected_at": "2026-08-22 08:00:13",
+    "date": "2026-08-22"
   },
   "_scoring": {
-    "score": 38.3,
+    "score": 37.6,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
@@ -467,10 +480,10 @@
         "status": "normal"
       },
       "turnover_rate": {
-        "score": 7.0,
+        "score": 6.3,
         "weight": 10,
-        "ratio": 0.7,
-        "status": "warning"
+        "ratio": 0.633,
+        "status": "normal"
       },
       "sentiment": {
         "score": 0.8,
@@ -497,6 +510,6 @@
         "status": "normal"
       }
     },
-    "triggered_count": 2
+    "triggered_count": 1
   }
 }
