@@ -94,9 +94,9 @@
     "evaluated_at": "2026-08-06"
   },
   "margin_ratio": {
-    "value": 2.65,
-    "margin_balance": 26214.9,
-    "float_mv": 990100.2,
+    "value": 2.67,
+    "margin_balance": 26153.2,
+    "float_mv": 980163.9,
     "trade_ratio": null,
     "threshold": 3,
     "unit": "%",
@@ -146,14 +146,18 @@
       {
         "date": "2026-08-20",
         "value": 26214.9
+      },
+      {
+        "date": "2026-08-21",
+        "value": 26153.2
       }
     ],
     "collected_at": "2026-08-14 20:41:16",
     "data_source": "eastmoney_datacenter (融资余额) + 换手率同口径流通市值",
-    "rqye": 268.3,
+    "rqye": 270.5,
     "liangrong_total": 26549.7,
-    "margin_balance_date": "2026-08-20",
-    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额26214.9亿（东方财富数据中心，4434只标的求和，数据日2026-08-20）/流通市值990100.2亿（与换手率同口径）。SCF 自动抓取。"
+    "margin_balance_date": "2026-08-21",
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额26153.2亿（东方财富数据中心，4435只标的求和，数据日2026-08-21）/流通市值980163.9亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": -4662.22,
@@ -178,9 +182,9 @@
     "evaluated_at": "2026-08-03"
   },
   "turnover_rate": {
-    "value": 1.9,
-    "total_amount": 18792.6,
-    "float_mv": 990100.2,
+    "value": 2.05,
+    "total_amount": 20074.6,
+    "float_mv": 980163.9,
     "threshold": 3,
     "unit": "%",
     "status": "normal",
@@ -265,13 +269,18 @@
         "date": "2026-08-21",
         "value": 1.9,
         "amount": 18792.6
+      },
+      {
+        "date": "2026-08-24",
+        "value": 2.05,
+        "amount": 20074.6
       }
     ],
     "collected_at": "2026-08-14 20:41:16",
     "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)",
-    "total_mv": 1138486.8,
-    "data_date": "2026-08-21",
-    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额18792.6亿（沪8834.2亿+深9958.4亿），流通市值990100.2亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-08-21，SCF 2026-08-24 自动抓取。"
+    "total_mv": 1125641.3,
+    "data_date": "2026-08-24",
+    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额20074.6亿（沪9520.4亿+深10554.2亿），流通市值980163.9亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-08-24，SCF 2026-08-25 自动抓取。"
   },
   "sentiment": {
     "value": 3,
@@ -393,15 +402,15 @@
     "y10": 4.7339,
     "y2": 4.2295,
     "y30": 5.273,
-    "y3m": 3.8059,
+    "y3m": 3.8003,
     "spread_2s10s_bp": 50.4,
-    "spread_10y3m_bp": 92.8,
+    "spread_10y3m_bp": 93.4,
     "status": "normal",
     "trend": "flattening",
     "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率",
     "threshold_type": "qualitative",
     "data_source": "sina bond.finance.sina.com.cn (daily close)",
-    "data_date": "2026-08-21",
+    "data_date": "2026-08-24",
     "history": [
       {
         "date": "2026-08-07",
@@ -434,24 +443,28 @@
       {
         "date": "2026-08-21",
         "value": 50.4
+      },
+      {
+        "date": "2026-08-24",
+        "value": 50.4
       }
     ],
-    "note": "美债10Y-2Y利差 +50.4bp（2026-08-21：10Y=4.734%、2Y=4.229%），曲线正斜率、未倒挂。10Y-3M利差 +92.8bp。",
+    "note": "美债10Y-2Y利差 +50.4bp（2026-08-24：10Y=4.734%、2Y=4.229%），曲线正斜率、未倒挂。10Y-3M利差 +93.4bp。",
     "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动。",
     "sources": [
       "Sina Finance - US Treasury Yield (bond.finance.sina.com.cn)",
       "Federal Reserve / U.S. Treasury"
     ],
-    "evaluated_at": "2026-08-21",
+    "evaluated_at": "2026-08-24",
     "refresh_mode": "auto_sina",
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "_meta": {
-    "collected_at": "2026-08-24 08:00:16",
-    "date": "2026-08-24"
+    "collected_at": "2026-08-25 08:00:15",
+    "date": "2026-08-25"
   },
   "_scoring": {
-    "score": 37.6,
+    "score": 38.1,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
@@ -480,9 +493,9 @@
         "status": "normal"
       },
       "turnover_rate": {
-        "score": 6.3,
+        "score": 6.8,
         "weight": 10,
-        "ratio": 0.633,
+        "ratio": 0.683,
         "status": "normal"
       },
       "sentiment": {
