@@ -1,0 +1,160 @@
+{
+  "dashboard_title": "🐻 大牛市逃顶信号监控看板",
+  "version": "1.0.0",
+  "last_updated": "",
+  "indicators": {
+    "pe_ttm": {
+      "id": 1,
+      "name": "万得全A(除金融石化) PE TTM",
+      "category": "core",
+      "category_label": "核心-估值",
+      "unit": "倍",
+      "threshold": 60,
+      "threshold_operator": ">=",
+      "warning_level": "danger",
+      "data_source": "research_reports_monthly",
+      "update_freq": "daily",
+      "soft_scale": true
+    },
+    "new_accounts": {
+      "id": 2,
+      "name": "股票新开户数量",
+      "category": "auxiliary",
+      "category_label": "辅助-市场情绪",
+      "unit": "万户",
+      "threshold_type": "trend",
+      "threshold_desc": "环比转负（连续2月下降）",
+      "warning_level": "warning",
+      "data_source": "manual_or_api",
+      "update_freq": "monthly"
+    },
+    "margin_ratio": {
+      "id": 3,
+      "name": "融资融券余额占流通市值比",
+      "category": "auxiliary",
+      "category_label": "辅助-市场情绪",
+      "unit": "%",
+      "threshold": 3,
+      "threshold_operator": ">=",
+      "warning_level": "warning",
+      "data_source": "research_reports_monthly",
+      "update_freq": "daily",
+      "sub_condition": {
+        "name": "交易占比拐头",
+        "desc": "交易占比见顶后开始下降"
+      }
+    },
+    "fund_shares": {
+      "id": 4,
+      "name": "基金份额增长",
+      "category": "auxiliary",
+      "category_label": "辅助-市场情绪",
+      "unit": "亿份",
+      "threshold": 3000,
+      "threshold_operator": ">",
+      "threshold_desc": "单月份额增长",
+      "warning_level": "warning",
+      "data_source": "fund_association",
+      "update_freq": "monthly"
+    },
+    "turnover_rate": {
+      "id": 5,
+      "name": "全市场换手率",
+      "category": "auxiliary",
+      "category_label": "辅助-市场情绪",
+      "unit": "%",
+      "threshold": 3,
+      "threshold_operator": ">",
+      "warning_level": "warning",
+      "data_source": "research_reports_monthly",
+      "update_freq": "daily",
+      "soft_scale": true
+    },
+    "sentiment": {
+      "id": 9,
+      "name": "舆情热度/定性判断",
+      "category": "auxiliary",
+      "category_label": "辅助-市场情绪",
+      "unit": "分",
+      "threshold": 4,
+      "threshold_operator": ">=",
+      "threshold_desc": "AI评分1-5：全民炒股/狂热=4-5；>=4预警",
+      "warning_level": "warning",
+      "data_source": "ai_eval",
+      "update_freq": "daily",
+      "ai_eval_standard": "1分 低迷：市场讨论度低，新股民稀少，社交平台A股话题冷清，基金发行遇冷。\n2分 温和：讨论度一般，未到全民炒股，开户数平稳。\n3分 活跃：散户活跃度明显上升，新开户同比高增，自媒体A股内容热度上升，基金发行回暖。\n4分 亢奋(预警)：全民炒股特征初现——新开户暴增(同比>50%)、日光基频现、社交平台刷屏看涨、散户杠杆快速上升，但已出现\"赚指数不赚钱\"等早期裂痕。\n5分 狂热(危险)：街头巷尾谈股、新开户环比仍加速、融资余额占比快速攀升、出现\"这次不一样\"叙事、IPO/打新全民参与。\n阈值：评分>=4 触发预警。",
+      "ai_eval_version": "2026-07-28",
+      "note": "由AI检索中文互联网舆情自动评分，标准见ai_eval_standard"
+    },
+    "ipo_finance": {
+      "id": 7,
+      "name": "IPO/再融资规模",
+      "category": "auxiliary",
+      "category_label": "辅助-融资减持",
+      "unit": "亿",
+      "threshold_type": "qualitative",
+      "threshold_desc": "大型IPO案例频发（需人工判断）",
+      "warning_level": "info",
+      "data_source": "public_data",
+      "update_freq": "weekly"
+    },
+    "shareholder_reduce": {
+      "id": 8,
+      "name": "重要股东减持",
+      "category": "auxiliary",
+      "category_label": "辅助-融资减持",
+      "unit": "亿",
+      "threshold": 1000,
+      "threshold_operator": ">",
+      "threshold_desc": "单月减持金额",
+      "warning_level": "warning",
+      "data_source": "public_data",
+      "update_freq": "monthly"
+    },
+    "us_yield": {
+      "id": 6,
+      "name": "美债利差(10Y-2Y)",
+      "category": "auxiliary",
+      "category_label": "辅助-全球宏观",
+      "unit": "bp",
+      "threshold_type": "qualitative",
+      "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp健康正斜率",
+      "warning_level": "warning",
+      "data_source": "sina_us_treasury_daily",
+      "update_freq": "daily",
+      "note": "新浪财经 bond.finance.sina.com.cn 每日收盘收益率（国内可达、腾讯云直连）自动抓取；Cloudflare Worker 中继/美财政部直连作为降级。SCF 定时函数自动刷新。"
+    },
+    "national_team_etf": {
+      "id": 10,
+      "name": "国家队ETF持仓/增减持",
+      "category": "auxiliary",
+      "category_label": "辅助-国家队护盘",
+      "unit": "万亿",
+      "threshold_type": "qualitative",
+      "threshold_desc": "国家队份额/持仓比例见顶回落、近三月净申赎转负(净赎回)=减/撤→预警/危险；持续持有或增持=正常（逆向托底逻辑）",
+      "warning_level": "warning",
+      "data_source": "fund_disclosure_top10_holders + 官方汇总交叉核对",
+      "update_freq": "monthly/quarterly",
+      "note": "数据底稿：各ETF基金定期报告「前十大持有人」(中央汇金投资/资管及专项资管计划/证金关联)，经 wangwang-etf.com 聚合、披露日即真实filing日；并以官方汇总(中央汇金ETF持仓市值1.28万亿@2025H1→1.53万亿@2025年末)交叉核对核心宽基ETF持仓金额求和≈1.53万亿，量级吻合。信号逻辑：国家队为A股托底力量，其减/撤=散户接力冲顶后期特征=逃顶窗口打开。因站点反爬无法自动抓取，由WorkBuddy浏览器核对或人工录入写入缓存。"
+    }
+  },
+  "feishu": {
+    "enabled": true,
+    "webhook_url": "",
+    "alert_on_single_trigger": true
+  },
+  "scoring": {
+    "weights": {
+      "pe_ttm": 30,
+      "new_accounts": 10,
+      "margin_ratio": 15,
+      "fund_shares": 10,
+      "turnover_rate": 10,
+      "sentiment": 5,
+      "ipo_finance": 5,
+      "shareholder_reduce": 7,
+      "us_yield": 8,
+      "national_team_etf": 10
+    }
+  }
+}
