@@ -94,9 +94,9 @@
     "evaluated_at": "2026-08-06"
   },
   "margin_ratio": {
-    "value": 2.63,
-    "margin_balance": 26315.7,
-    "float_mv": 1000220.1,
+    "value": 2.66,
+    "margin_balance": 26111.2,
+    "float_mv": 982974.1,
     "trade_ratio": null,
     "threshold": 3,
     "unit": "%",
@@ -130,14 +130,18 @@
       {
         "date": "2026-08-14",
         "value": 13465.1
+      },
+      {
+        "date": "2026-08-24",
+        "value": 26111.2
       }
     ],
     "collected_at": "2026-08-25 10:15:20",
-    "data_source": "eastmoney_http (datacenter RPTA_WEB_RZRQ_GGMX 求和)",
-    "rqye": 259.7,
+    "data_source": "eastmoney_datacenter (融资余额) + 换手率同口径流通市值",
+    "rqye": 274.1,
     "liangrong_total": 26575.4,
-    "margin_balance_date": "2026-08-13",
-    "note": "融资余额占流通市值比=融资余额/两市流通市值×100。融资余额=26315.7亿(全市场4429只两融标的求和，2026-08-13)，流通市值=1000220.1亿(东方财富口径，与换手率同源)。融券余额259.7亿、两融余额合计26575.4亿。来源：东方财富datacenter两融明细接口。"
+    "margin_balance_date": "2026-08-24",
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额26111.2亿（东方财富数据中心，4435只标的求和，数据日2026-08-24）/流通市值982974.1亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": -4662.22,
@@ -162,12 +166,12 @@
     "evaluated_at": "2026-08-03"
   },
   "turnover_rate": {
-    "value": 2.14,
-    "total_amount": 21428.4,
-    "float_mv": 999694.6,
+    "value": 1.86,
+    "total_amount": 18318.4,
+    "float_mv": 982974.1,
     "threshold": 3,
     "unit": "%",
-    "status": "warning",
+    "status": "normal",
     "trend": "down",
     "history": [
       {
@@ -224,13 +228,18 @@
         "date": "2026-08-14",
         "value": 2.14,
         "amount": 21428.4
+      },
+      {
+        "date": "2026-08-25",
+        "value": 1.86,
+        "amount": 18318.4
       }
     ],
     "collected_at": "2026-08-25 10:15:20",
     "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)",
-    "total_mv": 1145616.2,
-    "data_date": "2026-08-14",
-    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额21428.4亿（沪9903.72亿+深11524.71亿），流通市值999694.6亿。数据源：腾讯行情 qt.gtimg.cn（深市代码返回全市场汇总，已与新浪 hq.sinajs.cn 交叉验证一致），交易日2026-08-14。该数值与中新经纬/新华财经/澎湃/界面报道的「8月14日沪深两市成交额21428.43亿元（沪9903.72亿+深11525亿）」完全吻合。",
+    "total_mv": 1128832.4,
+    "data_date": "2026-08-25",
+    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额18318.4亿（沪8588.7亿+深9729.7亿），流通市值982974.1亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-08-25，SCF 2026-08-26 自动抓取。",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ]
@@ -348,18 +357,20 @@
     "evaluated_at": "2026-08-03"
   },
   "us_yield": {
-    "value": 51.6,
+    "value": 46.8,
     "unit": "bp",
-    "threshold_type": "qualitative",
-    "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率",
+    "y10": 4.7041,
+    "y2": 4.2358,
+    "y30": 5.235,
+    "y3m": 3.7876,
+    "spread_2s10s_bp": 46.8,
+    "spread_10y3m_bp": 91.7,
     "status": "normal",
-    "trend": "steepening",
-    "y10": 4.645,
-    "y2": 4.129,
-    "y30": 5.231,
-    "y3m": 3.87,
-    "spread_2s10s_bp": 51.6,
-    "spread_10y3m_bp": 77.5,
+    "trend": "flattening",
+    "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率",
+    "threshold_type": "qualitative",
+    "data_source": "sina bond.finance.sina.com.cn (daily close)",
+    "data_date": "2026-08-25",
     "history": [
       {
         "date": "2026-08-07",
@@ -372,21 +383,21 @@
       {
         "date": "2026-08-14",
         "value": 51.6
+      },
+      {
+        "date": "2026-08-25",
+        "value": 46.8
       }
     ],
-    "collected_at": "2026-08-25 10:15:21",
-    "data_source": "us_treasury_daily (via AI web search)",
-    "data_date": "2026-08-14",
-    "note": "美债10Y-2Y利差 +51.6bp（2026-08-14：10Y=4.645%、2Y=4.129%），曲线正斜率、未倒挂。近一周由+46.8bp走阔至+51.6bp（趋陡），3Y期国债标售需求强劲、通胀温和，短端回落快于长端。当前全球宏观未现衰退倒挂信号。",
-    "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。注意：倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动，比倒挂本身更接近拐点。",
+    "note": "美债10Y-2Y利差 +46.8bp（2026-08-25：10Y=4.704%、2Y=4.236%），曲线正斜率、未倒挂。10Y-3M利差 +91.7bp。",
+    "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动。",
     "sources": [
-      "新浪财经/环球市场播报（2026-08-14：10Y=4.645%、2Y=4.129%、30Y=5.231%）",
-      "CNBC 美债收盘（2026-08-12：2s10s=+46.83bp）",
-      "YieldCurvesToday/美财政部（2026-08-07：2s10s=+46bp、3m10y=+78bp）"
+      "Sina Finance - US Treasury Yield (bond.finance.sina.com.cn)",
+      "Federal Reserve / U.S. Treasury"
     ],
-    "evaluated_at": "2026-08-14",
-    "refresh_mode": "ai_web_search",
-    "refresh_note": "美财政部/FRED/Yahoo 官方源在国内及腾讯云网络不可达，故本指标由 AI 对话联网检索权威值后写入缓存刷新（同 PE/月频指标），不纳入 SCF 云端自动更新。"
+    "evaluated_at": "2026-08-25",
+    "refresh_mode": "auto_sina",
+    "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
     "value": 1.53,
@@ -413,11 +424,11 @@
     "note": "数据底稿：各ETF基金定期报告「前十大持有人」(中央汇金投资/资管及专项资管计划)。wangwang-etf.com逐ETF聚合，披露日即真实filing日；并以官方汇总(中央汇金ETF持仓市值1.53万亿@2025年末)交叉核对，核心宽基ETF持仓金额求和≈1.53万亿，量级吻合。信号逻辑：国家队为A股托底力量，持续持有/增持=市场仍弱(非顶)；其份额/持仓比例见顶回落、净申赎转负(净赎回)=托底退出=逃顶窗口特征→亮灯。当前(2025H2)官方披露份额基本按兵不动、市值增长主要来自净值上涨，未见减/撤，故状态normal。逐ETF近三月净申赎除510310(-526亿)外暂未全量核对，net_sub_3m_yi待下一期披露后补全；510310单只净赎回作为观测项，不代表国家队整体减持（其持仓比例仍85.27%）。"
   },
   "_meta": {
-    "collected_at": "2026-08-25 10:15:21",
-    "date": "2026-08-25"
+    "collected_at": "2026-08-26 08:00:14",
+    "date": "2026-08-26"
   },
   "_scoring": {
-    "score": 36.3,
+    "score": 37.5,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
@@ -446,10 +457,10 @@
         "status": "normal"
       },
       "turnover_rate": {
-        "score": 7.1,
+        "score": 6.2,
         "weight": 10,
-        "ratio": 0.713,
-        "status": "warning"
+        "ratio": 0.62,
+        "status": "normal"
       },
       "sentiment": {
         "score": 0.8,
@@ -474,14 +485,8 @@
         "weight": 8,
         "ratio": 0.15,
         "status": "normal"
-      },
-      "national_team_etf": {
-        "score": 1.5,
-        "weight": 10,
-        "ratio": 0.15,
-        "status": "normal"
       }
     },
-    "triggered_count": 2
+    "triggered_count": 1
   }
 }
