@@ -1,0 +1,22 @@
+{
+  "data_date": "2026-08-27",
+  "updated_at": "2026/08/27 09:31:22",
+  "source": "新浪财经/腾讯财经 日K线（蜡烛图skill patterns.py 计算）",
+  "report_url": "https://a87e04ef15ee40c68e59430b487d9294.app.codebuddy.work/",
+  "window": 30,
+  "bullish": 9,
+  "bearish": 0,
+  "strong": 2,
+  "dominant_patterns": "红三兵×6、塔形底部×2、看涨捉腰带线×1",
+  "indices": [
+    "上证指数",
+    "深证成指",
+    "创业板指",
+    "沪深300",
+    "中证500",
+    "科创50",
+    "上证50"
+  ],
+  "is_snapshot": false,
+  "note": "每日由腾讯云 SCF 服务端采集（复用蜡烛图skill），非人工快照。"
+}
