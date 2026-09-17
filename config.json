@@ -65,13 +65,33 @@
       "category": "auxiliary",
       "category_label": "辅助-市场情绪",
       "unit": "%",
-      "threshold": 3,
       "threshold_operator": ">",
       "warning_level": "warning",
       "data_source": "research_reports_monthly",
       "update_freq": "daily",
-      "soft_scale": true,
-      "threshold_desc": "全市场换手率 3%。⚠️ **此阈值无源材料依据**：源视频只作定性判断（“25年5月换手率并不高、没有体现出很强的炒股情绪”），未给数字，待另定。"
+      "threshold_desc": "口径：**万得全A 周平均日换手率**（近5个交易日均值；Wind EDB Y0136582）。档位按该口径 10 年周分布（511 周，2016-W38~2026-W38）分位标定：≥2.0% = P93.5（偏热）/ ≥2.3% = P97.7（过热）/ ≥2.6% = P99.0（极端，10年仅5周）。⚠️ 源材料（葫芦军师逃顶框架）对换手率只作定性判断、未给数字，此档位系数据标定，非视频口径。",
+      "threshold_type": "tiered",
+      "tiers": [
+        {
+          "gte": 2.0,
+          "status": "warning",
+          "ratio": 0.55,
+          "label": "偏热"
+        },
+        {
+          "gte": 2.3,
+          "status": "warning",
+          "ratio": 0.8,
+          "label": "过热"
+        },
+        {
+          "gte": 2.6,
+          "status": "danger",
+          "ratio": 1.0,
+          "label": "极端"
+        }
+      ],
+      "base_ratio": 0.15
     },
     "sentiment": {
       "id": 9,
