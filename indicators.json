@@ -1,10 +1,10 @@
 {
   "pe_ttm": {
-    "value": 38.53,
+    "value": 37.8938,
     "threshold": 60,
     "unit": "倍",
     "status": "normal",
-    "trend": "unknown",
+    "trend": "wind",
     "history": [
       {
         "date": "2025-06-30",
@@ -28,9 +28,9 @@
       }
     ],
     "collected_at": "2026-08-26 15:31:03",
-    "data_source": "user_wind_terminal",
-    "value_date": "2026-07-28",
-    "data_date": "2026-07-28",
+    "data_source": "wind_mcp index_data.get_index_fundamentals (881003.WI 万得全A除金融石化)",
+    "value_date": "2026-09-16",
+    "data_date": "2026-09-16",
     "value_note": "万得全A(除金融、石油石化)PE TTM，来源：用户万得终端实时读数（2026-07-28，已确认同口径）。7月以来市场深度回调（科创50月跌超25%、创业板跌超23%），除金融石化PE自43.6(2026-02)回落至38.5。参考：万得全A(含金融)PE TTM 2026-08-03为21.8、历史分位82.66%（东方财富每日解盘），全市场估值仍偏高但科技主线已显著杀估值。percentile待下期华宝证券研报更新。",
     "reference_wind_all_a": {
       "value": 21.8,
@@ -43,8 +43,11 @@
       "date": "2026-08-03",
       "note": "全市场PE(TTM)，来源：东方财富每日解盘"
     },
-    "percentile": null,
-    "distance_to_top": 35.8
+    "percentile": 78.5744,
+    "distance_to_top": 35.8,
+    "value_source": "wind",
+    "percentile_window": "近10年·1908/2428",
+    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-09-16，近10年历史分位 78.57%（近10年·1908/2428）。序列已是最新，本次未重复写入。"
   },
   "new_accounts": {
     "value": 239.73,
@@ -98,9 +101,9 @@
     "evaluated_at": "2026-09-17"
   },
   "margin_ratio": {
-    "value": 2.63,
-    "margin_balance": 25794.4,
-    "float_mv": 979792.5,
+    "value": 2.65,
+    "margin_balance": 25887.2,
+    "float_mv": 976429.5,
     "trade_ratio": null,
     "threshold": 3,
     "unit": "%",
@@ -198,14 +201,18 @@
       {
         "date": "2026-09-15",
         "value": 25794.4
+      },
+      {
+        "date": "2026-09-16",
+        "value": 25887.2
       }
     ],
     "collected_at": "2026-08-26 15:31:03",
     "data_source": "eastmoney_datacenter (融资余额) + 换手率同口径流通市值",
-    "rqye": 291.8,
+    "rqye": 292.6,
     "liangrong_total": 26575.4,
-    "margin_balance_date": "2026-09-15",
-    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额25794.4亿（东方财富数据中心，4445只标的求和，数据日2026-09-15）/流通市值979792.5亿（与换手率同口径）。SCF 自动抓取。"
+    "margin_balance_date": "2026-09-16",
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额25887.2亿（东方财富数据中心，4447只标的求和，数据日2026-09-16）/流通市值976429.5亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": 8456.31,
@@ -235,9 +242,9 @@
     "evaluated_at": "2026-09-17"
   },
   "turnover_rate": {
-    "value": 1.88,
-    "total_amount": 18391.2,
-    "float_mv": 979792.5,
+    "value": 0.71,
+    "total_amount": 6884.2,
+    "float_mv": 976429.5,
     "threshold": 3,
     "unit": "%",
     "status": "normal",
@@ -377,17 +384,22 @@
         "date": "2026-09-16",
         "value": 1.88,
         "amount": 18391.2
+      },
+      {
+        "date": "2026-09-17",
+        "value": 0.71,
+        "amount": 6884.2
       }
     ],
     "collected_at": "2026-08-26 15:31:03",
     "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)",
-    "total_mv": 1125411.6,
-    "data_date": "2026-09-16",
-    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额18391.2亿（沪8711.4亿+深9679.8亿），流通市值979792.5亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-09-16，SCF 2026-09-17 自动抓取。",
+    "total_mv": 1121471.6,
+    "data_date": "2026-09-17",
+    "note": "全市场换手率=两市成交额/两市流通市值×100。成交额6884.2亿（沪3208.7亿+深3675.5亿），流通市值976429.5亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-09-17，SCF 2026-09-17 自动抓取。（⚠️ 盘中快照 10:00，尚未收盘，仅为当日半天成交额；当日 18:00 那次运行会用收盘完整值覆盖）",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ],
-    "intraday": false
+    "intraday": true
   },
   "sentiment": {
     "value": 3,
@@ -513,22 +525,22 @@
     "evaluated_at": "2026-08-03"
   },
   "us_yield": {
-    "value": 33.3,
+    "value": 28.4,
     "unit": "bp",
-    "y10": 5.004,
-    "y2": 4.6713,
-    "y30": 5.366,
+    "y10": 5.0159,
+    "y2": 4.7316,
+    "y30": 5.356,
     "y3m": 4.0815,
-    "spread_2s10s_bp": 33.3,
-    "spread_10y3m_bp": 92.2,
+    "spread_2s10s_bp": 28.4,
+    "spread_10y3m_bp": 93.4,
     "status": "warning",
     "spread_status": "normal",
     "y30_status": "warning",
-    "y30_risk": "30Y=5.366% 接近历史极值(参考5.18%@2023-10)→预警",
+    "y30_risk": "30Y=5.356% 接近历史极值(参考5.18%@2023-10)→预警",
     "y30_extreme_pct": 5.18,
     "y30_warn_pct": 5.0,
     "y30_danger_pct": 5.5,
-    "trend": "steepening",
+    "trend": "flattening",
     "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率。30Y收益率≥5.0%接近历史极值(预警)、≥5.5%突破历史极值(危险)，长端高位属逃顶风险因素。",
     "threshold_type": "qualitative",
     "data_source": "sina bond.finance.sina.com.cn (daily close)",
@@ -608,10 +620,10 @@
       },
       {
         "date": "2026-09-16",
-        "value": 33.3
+        "value": 28.4
       }
     ],
-    "note": "美债10Y-2Y利差 +33.3bp（2026-09-16：10Y=5.004%、2Y=4.671%、30Y=5.366%），曲线正斜率、未倒挂。10Y-3M利差 +92.2bp。30Y风险：30Y=5.366% 接近历史极值(参考5.18%@2023-10)→预警",
+    "note": "美债10Y-2Y利差 +28.4bp（2026-09-16：10Y=5.016%、2Y=4.732%、30Y=5.356%），曲线正斜率、未倒挂。10Y-3M利差 +93.4bp。30Y风险：30Y=5.356% 接近历史极值(参考5.18%@2023-10)→预警",
     "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动。",
     "sources": [
       "Sina Finance - US Treasury Yield (bond.finance.sina.com.cn)",
@@ -646,18 +658,18 @@
     "note": "数据底稿：各ETF基金定期报告「前十大持有人」(中央汇金投资/资管及专项资管计划)。wangwang-etf.com逐ETF聚合，披露日即真实filing日；并以官方汇总(中央汇金ETF持仓市值1.53万亿@2025年末)交叉核对，核心宽基ETF持仓金额求和≈1.53万亿，量级吻合。信号逻辑：国家队为A股托底力量，持续持有/增持=市场仍弱(非顶)；其份额/持仓比例见顶回落、净申赎转负(净赎回)=托底退出=逃顶窗口特征→亮灯。当前(2025H2)官方披露份额基本按兵不动、市值增长主要来自净值上涨，未见减/撤，故状态normal。逐ETF近三月净申赎除510310(-526亿)外暂未全量核对，net_sub_3m_yi待下一期披露后补全；510310单只净赎回作为观测项，不代表国家队整体减持（其持仓比例仍85.27%）。"
   },
   "_meta": {
-    "collected_at": "2026-09-17 08:00:25",
+    "collected_at": "2026-09-17 10:01:01",
     "date": "2026-09-17"
   },
   "_scoring": {
-    "score": 53.0,
+    "score": 49.2,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
       "pe_ttm": {
-        "score": 19.3,
+        "score": 18.9,
         "weight": 30,
-        "ratio": 0.642,
+        "ratio": 0.632,
         "status": "normal"
       },
       "new_accounts": {
@@ -679,9 +691,9 @@
         "status": "danger"
       },
       "turnover_rate": {
-        "score": 6.3,
+        "score": 2.4,
         "weight": 10,
-        "ratio": 0.627,
+        "ratio": 0.237,
         "status": "normal"
       },
       "sentiment": {
