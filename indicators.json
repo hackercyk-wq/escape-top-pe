@@ -731,7 +731,7 @@
     "source_policy": "凡从媒体/资讯获得的数据，必须在 sources 写明可核验的信息源与日期，并在 source_links 给出原始链接；链接须实际检索到并验证可达，禁止凭记忆拼写。口径与已有值不一致的来源不得用于更新，只能在 sources 里作为「未采用/口径不可比」说明保留。"
   },
   "_scoring": {
-    "score": 50.5,
+    "score": 47.6,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
@@ -754,8 +754,8 @@
         "status": "normal"
       },
       "fund_shares": {
-        "score": 10.0,
-        "weight": 10,
+        "score": 4.0,
+        "weight": 4,
         "ratio": 1.0,
         "status": "danger"
       },
