@@ -4,10 +4,10 @@
   "metric": "市盈率(TTM)",
   "unit": "倍",
   "start_date": "2006-01-04",
-  "end_date": "2026-09-16",
-  "count": 5031,
+  "end_date": "2026-09-17",
+  "count": 5032,
   "source": "Wind index_data.get_index_fundamentals（SCF 每日自动，881003.WI）",
-  "retrieved_at": "2026-09-16 18:00:27",
+  "retrieved_at": "2026-09-17 18:00:32",
   "data": [
     {
       "date": "2006-01-04",
@@ -20132,12 +20132,16 @@
     {
       "date": "2026-09-16",
       "pe": 37.8938
+    },
+    {
+      "date": "2026-09-17",
+      "pe": 37.7488
     }
   ],
   "latest": {
-    "date": "2026-09-16",
-    "pe": 37.8938
+    "date": "2026-09-17",
+    "pe": 37.7488
   },
-  "percentile": 78.5744,
-  "percentile_window": "近10年·1908/2428"
+  "percentile": 77.9242,
+  "percentile_window": "近10年·1893/2429"
 }
