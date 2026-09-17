@@ -104,9 +104,9 @@
       "category": "auxiliary",
       "category_label": "辅助-融资减持",
       "unit": "亿",
-      "threshold": 1000,
+      "threshold": 600,
       "threshold_operator": ">",
-      "threshold_desc": "单月减持金额",
+      "threshold_desc": "单月重要股东减持金额（万得标准口径，阈值按月均×1.23 标定）",
       "warning_level": "warning",
       "data_source": "public_data",
       "update_freq": "monthly"
