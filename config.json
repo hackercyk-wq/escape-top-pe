@@ -14,7 +14,8 @@
       "warning_level": "danger",
       "data_source": "research_reports_monthly",
       "update_freq": "daily",
-      "soft_scale": true
+      "soft_scale": true,
+      "threshold_desc": "顶点参考 60 倍。出处：葫芦军师《用9个信号预测股市见顶（截至2026/5）》——“07年/09年/15年牛市顶点都在70倍市盈率附近…即使考虑投资者越来越成熟、牛市泡沫应该越来越小，下一次大牛市的顶点也应该在60倍市盈率附近”。软阈值：PE/60 ≥0.9 危险、≥0.7 预警。"
     },
     "new_accounts": {
       "id": 2,
@@ -42,7 +43,8 @@
       "sub_condition": {
         "name": "交易占比拐头",
         "desc": "交易占比见顶后开始下降"
-      }
+      },
+      "threshold_desc": "≥3% 警惕。出处：同上——“两融余额占A股流通市值只有2.7%左右，处于一个正常偏高的位置，我个人认为占比超过3%才值得警惕”。硬阈值：≥3 预警、≥3.9 危险。"
     },
     "fund_shares": {
       "id": 4,
@@ -52,7 +54,7 @@
       "unit": "亿份",
       "threshold": 3000,
       "threshold_operator": ">",
-      "threshold_desc": "单月份额增长",
+      "threshold_desc": "权益类（股票+混合）单月份额净增 3000 亿。⚠️ **此阈值无源材料依据**：源视频未给数字，且作者明确表示“公募的数据已经没有那么强的参考性了…基金申购这个信号参考意义已经不太大了”。故权重已由 10 降至 4，阈值待另定。",
       "warning_level": "warning",
       "data_source": "fund_association",
       "update_freq": "monthly"
@@ -68,7 +70,8 @@
       "warning_level": "warning",
       "data_source": "research_reports_monthly",
       "update_freq": "daily",
-      "soft_scale": true
+      "soft_scale": true,
+      "threshold_desc": "全市场换手率 3%。⚠️ **此阈值无源材料依据**：源视频只作定性判断（“25年5月换手率并不高、没有体现出很强的炒股情绪”），未给数字，待另定。"
     },
     "sentiment": {
       "id": 9,
@@ -106,7 +109,7 @@
       "unit": "亿",
       "threshold": 600,
       "threshold_operator": ">",
-      "threshold_desc": "单月重要股东减持金额（万得标准口径，阈值按月均×1.23 标定）",
+      "threshold_desc": "单月 600 亿（万得标准口径）。出处：同上——“我之前设置的警惕值是单月超过1000亿”，但该 1000 亿是在“2025年5月=四百多亿”的宽口径下定的；万得同月为 265.81亿，两口径比 ≈0.603，故 1000×0.603≈603 → 取 600 亿（危险线 780 亿）。",
       "warning_level": "warning",
       "data_source": "public_data",
       "update_freq": "monthly"
@@ -153,7 +156,7 @@
       "pe_ttm": 30,
       "new_accounts": 10,
       "margin_ratio": 15,
-      "fund_shares": 10,
+      "fund_shares": 4,
       "turnover_rate": 10,
       "sentiment": 5,
       "ipo_finance": 5,
