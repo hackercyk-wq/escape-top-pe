@@ -959,57 +959,53 @@
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
-    "value": 216.7,
+    "value": 166.6,
     "unit": "亿元（今日净申赎）",
     "status": "normal",
-    "trend": "increasing",
+    "trend": "steady",
     "threshold_type": "quantitative",
     "threshold_desc": "当日放量（池成交额≥60日均值1.5倍）且净申赎绝对值日度分位≥P80 = 异动；异动且净赎回→预警（≥P95→危险）；放量净申购=托底、正常",
-    "data_date": "2026-10-16",
-    "vol_x_today": 1.5,
-    "net_today_pct": 89.2,
-    "is_spike": true,
-    "is_anomaly": true,
-    "anomaly_level": "obvious",
+    "data_date": "2026-10-19",
+    "vol_x_today": 1.07,
+    "net_today_pct": 86.4,
+    "is_spike": false,
+    "is_anomaly": false,
+    "anomaly_level": null,
     "today_top": [
+      {
+        "code": "510500",
+        "name": "中证500ETF南方",
+        "flow_yi": 41.3,
+        "du_yi": 6.07
+      },
       {
         "code": "510300",
         "name": "沪深300ETF华泰柏瑞",
-        "flow_yi": 130.2,
-        "du_yi": 30.68
-      },
-      {
-        "code": "510050",
-        "name": "上证50ETF华夏",
-        "flow_yi": 37.7,
-        "du_yi": 13.13
+        "flow_yi": 27.2,
+        "du_yi": 6.43
       },
       {
         "code": "159915",
         "name": "创业板ETF易方达",
-        "flow_yi": 13.1,
-        "du_yi": 4.66
+        "flow_yi": 22.1,
+        "du_yi": 8.0
       }
     ],
-    "net_sub_1w_yi": 593.35,
-    "net_sub_1m_yi": 984.68,
-    "net_sub_3m_yi": 1395.38,
-    "net_sub_1y_yi": -13879.03,
-    "net_sub_1y_yi_shares": -3234.94,
+    "net_sub_1w_yi": 744.31,
+    "net_sub_1m_yi": 1145.37,
+    "net_sub_3m_yi": 1239.58,
+    "net_sub_1y_yi": -13671.52,
+    "net_sub_1y_yi_shares": -3173.26,
     "vol_spike_threshold": 1.5,
     "vol_spike_days_1y": 35,
     "vol_spike_flow_1y": -10889.28,
-    "hold_amount_yi_est": 3759.0,
-    "hold_amount_trillion_est": 0.376,
+    "hold_amount_yi_est": 3867.0,
+    "hold_amount_trillion_est": 0.387,
     "hold_amount_yi_disclosed": 15035.0,
     "hold_report_date": "2025-12-31",
     "hold_is_estimate": true,
     "core_etf_count": 17,
     "history": [
-      {
-        "date": "2026-01-15",
-        "value": -708.76
-      },
       {
         "date": "2026-01-16",
         "value": -1039.2
@@ -1725,16 +1721,13 @@
       {
         "date": "2026-10-16",
         "value": 216.67
+      },
+      {
+        "date": "2026-10-19",
+        "value": 166.56
       }
     ],
     "daily": [
-      {
-        "date": "2026-09-11",
-        "du": 8.04,
-        "flow": 5.87,
-        "amt": 315.7,
-        "vol_x": 0.86
-      },
       {
         "date": "2026-09-14",
         "du": 1.9,
@@ -1867,12 +1860,18 @@
         "flow": 216.67,
         "amt": 488.63,
         "vol_x": 1.5
+      },
+      {
+        "date": "2026-10-19",
+        "du": 49.28,
+        "flow": 166.56,
+        "amt": 348.52,
+        "vol_x": 1.07
       }
     ],
-    "collected_at": "2026-10-19 13:40:00",
+    "collected_at": "2026-10-20 09:33:58",
     "data_source": "腾讯行情 qt.gtimg.cn（总份额/成交额/均价）+ 基金定期报告披露比例",
-    "note": "今日**放量净申购**（成交额 1.50x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+217 亿元（+61.3 亿份），主要 沪深300ETF华泰柏瑞 +130 亿、上证50ETF华夏 +38 亿、创业板ETF易方达 +13 亿。近一年累计 -13879 亿元、放量日 35 天贡献 -10889 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。",
-    "stale_note": "本次更新失败（'code'），沿用 2026-10-16 的值"
+    "note": "今日成交额 1.07x，无异常放量。今日净申赎（份额变化×成交均价）：+167 亿元（+49.3 亿份），主要 中证500ETF南方 +41 亿、沪深300ETF华泰柏瑞 +27 亿、创业板ETF易方达 +22 亿。近一年累计 -13672 亿元、放量日 35 天贡献 -10889 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
   },
   "_meta": {
     "collected_at": "2026-10-20 08:00:34",
