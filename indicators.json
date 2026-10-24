@@ -612,7 +612,7 @@
     "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)（万得全A口径取数失败，降级）",
     "total_mv": 1036842.9,
     "data_date": "2026-10-23",
-    "note": "⚠️ 口径降级：万得全A 取数失败，暂用「沪深两市成交额/流通市值」。同日沪深两市参考：成交额19562.8亿（沪8986.7亿+深10576.2亿）、流通市值909763.8亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-10-23，SCF 2026-10-23 自动抓取。",
+    "note": "⚠️ 口径降级：万得全A 取数失败，暂用「沪深两市成交额/流通市值」。同日沪深两市参考：成交额19562.8亿（沪8986.7亿+深10576.2亿）、流通市值909763.8亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-10-23，SCF 2026-10-24 自动抓取。",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ],
@@ -799,9 +799,9 @@
     "y10": 4.9689,
     "y2": 4.6524,
     "y30": 5.294,
-    "y3m": 4.1379,
+    "y3m": 4.1365,
     "spread_2s10s_bp": 31.6,
-    "spread_10y3m_bp": 83.1,
+    "spread_10y3m_bp": 83.2,
     "status": "warning",
     "spread_status": "normal",
     "y30_status": "warning",
@@ -813,7 +813,7 @@
     "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率。30Y收益率≥5.0%接近历史极值(预警)、≥5.5%突破历史极值(危险)，长端高位属逃顶风险因素。",
     "threshold_type": "qualitative",
     "data_source": "sina bond.finance.sina.com.cn (daily close)",
-    "data_date": "2026-10-22",
+    "data_date": "2026-10-23",
     "history": [
       {
         "date": "2026-08-07",
@@ -994,70 +994,70 @@
       {
         "date": "2026-10-22",
         "value": 31.6
+      },
+      {
+        "date": "2026-10-23",
+        "value": 31.6
       }
     ],
-    "note": "美债10Y-2Y利差 +31.6bp（2026-10-22：10Y=4.969%、2Y=4.652%、30Y=5.294%），曲线正斜率、未倒挂。10Y-3M利差 +83.1bp。30Y风险：30Y=5.294% 接近历史极值(参考5.18%@2023-10)→预警",
+    "note": "美债10Y-2Y利差 +31.6bp（2026-10-23：10Y=4.969%、2Y=4.652%、30Y=5.294%），曲线正斜率、未倒挂。10Y-3M利差 +83.2bp。30Y风险：30Y=5.294% 接近历史极值(参考5.18%@2023-10)→预警",
     "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动。",
     "sources": [
       "Sina Finance - US Treasury Yield (bond.finance.sina.com.cn)",
       "Federal Reserve / U.S. Treasury"
     ],
-    "evaluated_at": "2026-10-22",
+    "evaluated_at": "2026-10-23",
     "refresh_mode": "auto_sina",
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
-    "value": 264.3,
+    "value": 475.8,
     "unit": "亿元（今日净申赎）",
     "status": "normal",
     "trend": "increasing",
     "threshold_type": "quantitative",
     "threshold_desc": "当日放量（池成交额≥60日均值1.5倍）且净申赎绝对值日度分位≥P80 = 异动；异动且净赎回→预警（≥P95→危险）；放量净申购=托底、正常",
-    "data_date": "2026-10-22",
-    "vol_x_today": 2.34,
-    "net_today_pct": 92.0,
+    "data_date": "2026-10-23",
+    "vol_x_today": 2.62,
+    "net_today_pct": 95.6,
     "is_spike": true,
     "is_anomaly": true,
-    "anomaly_level": "obvious",
+    "anomaly_level": "extreme",
     "today_top": [
       {
         "code": "510300",
         "name": "沪深300ETF华泰柏瑞",
-        "flow_yi": 104.9,
-        "du_yi": 25.31
+        "flow_yi": 103.5,
+        "du_yi": 25.13
       },
       {
-        "code": "510050",
-        "name": "上证50ETF华夏",
-        "flow_yi": 45.4,
-        "du_yi": 15.93
+        "code": "159919",
+        "name": "沪深300ETF嘉实",
+        "flow_yi": 94.6,
+        "du_yi": 22.02
       },
       {
         "code": "510330",
         "name": "沪深300ETF华夏",
-        "flow_yi": 35.9,
-        "du_yi": 8.31
+        "flow_yi": 59.1,
+        "du_yi": 13.75
       }
     ],
-    "net_sub_1w_yi": 823.57,
-    "net_sub_1m_yi": 1462.71,
-    "net_sub_3m_yi": 1572.82,
-    "net_sub_1y_yi": -13178.81,
-    "net_sub_1y_yi_shares": -3028.86,
+    "net_sub_1w_yi": 1082.66,
+    "net_sub_1m_yi": 1953.59,
+    "net_sub_3m_yi": 2021.61,
+    "net_sub_1y_yi": -12724.33,
+    "net_sub_1y_yi_shares": -2905.37,
     "vol_spike_threshold": 1.5,
-    "vol_spike_days_1y": 36,
-    "vol_spike_flow_1y": -10624.98,
-    "hold_amount_yi_est": 4139.0,
-    "hold_amount_trillion_est": 0.414,
+    "vol_spike_days_1y": 37,
+    "vol_spike_flow_1y": -10149.22,
+    "hold_amount_yi_est": 4480.0,
+    "hold_amount_trillion_est": 0.448,
     "hold_amount_yi_disclosed": 15035.0,
     "hold_report_date": "2025-12-31",
     "hold_is_estimate": true,
     "core_etf_count": 17,
     "history": [
-      {
-        "date": "2026-01-21",
-        "value": -1029.58
-      },
       {
         "date": "2026-01-22",
         "value": -727.43
@@ -1773,16 +1773,13 @@
       {
         "date": "2026-10-22",
         "value": 264.3
+      },
+      {
+        "date": "2026-10-23",
+        "value": 475.76
       }
     ],
     "daily": [
-      {
-        "date": "2026-09-17",
-        "du": -4.24,
-        "flow": -15.12,
-        "amt": 222.22,
-        "vol_x": 0.63
-      },
       {
         "date": "2026-09-18",
         "du": -1.97,
@@ -1915,16 +1912,22 @@
         "flow": 264.3,
         "amt": 720.76,
         "vol_x": 2.34
+      },
+      {
+        "date": "2026-10-23",
+        "du": 129.6,
+        "flow": 475.76,
+        "amt": 814.95,
+        "vol_x": 2.62
       }
     ],
-    "collected_at": "2026-10-23 00:00:39",
+    "collected_at": "2026-10-24 00:00:28",
     "data_source": "腾讯行情 qt.gtimg.cn（总份额/成交额/均价）+ 基金定期报告披露比例",
-    "note": "今日**放量净申购**（成交额 2.34x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+264 亿元（+74.9 亿份），主要 沪深300ETF华泰柏瑞 +105 亿、上证50ETF华夏 +45 亿、沪深300ETF华夏 +36 亿。近一年累计 -13179 亿元、放量日 36 天贡献 -10625 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。",
-    "stale_note": "本次更新失败（IncompleteRead(640743 bytes read, 25280 more expected)），沿用 2026-10-22 的值"
+    "note": "今日**放量净申购**（成交额 2.62x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+476 亿元（+129.6 亿份），主要 沪深300ETF华泰柏瑞 +104 亿、沪深300ETF嘉实 +95 亿、沪深300ETF华夏 +59 亿。近一年累计 -12724 亿元、放量日 37 天贡献 -10149 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
   },
   "_meta": {
-    "collected_at": "2026-10-23 18:00:41",
-    "date": "2026-10-23",
+    "collected_at": "2026-10-24 08:00:31",
+    "date": "2026-10-24",
     "source_policy": "凡从媒体/资讯获得的数据，必须在 sources 写明可核验的信息源与日期，并在 source_links 给出原始链接；链接须实际检索到并验证可达，禁止凭记忆拼写。口径与已有值不一致的来源不得用于更新，只能在 sources 里作为「未采用/口径不可比」说明保留。"
   },
   "_scoring": {
