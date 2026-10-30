@@ -1,6 +1,6 @@
 {
   "pe_ttm": {
-    "value": 33.2735,
+    "value": 32.6017,
     "threshold": 60,
     "unit": "倍",
     "status": "normal",
@@ -29,8 +29,8 @@
     ],
     "collected_at": "2026-10-29 10:26:04",
     "data_source": "wind_mcp index_data.get_index_fundamentals (881003.WI 万得全A除金融石化)",
-    "value_date": "2026-10-28",
-    "data_date": "2026-10-28",
+    "value_date": "2026-10-29",
+    "data_date": "2026-10-29",
     "value_note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-10-28，近10年历史分位 69.39%（1685/2428）。2026-10-29 10:23 手工补 10-27(32.7365)、10-28(33.2735) 两个交易日（每日 15:00 自动任务 10-27 起漏跑）。",
     "reference_wind_all_a": {
       "value": 21.8,
@@ -43,11 +43,11 @@
       "date": "2026-08-03",
       "note": "全市场PE(TTM)，来源：东方财富每日解盘"
     },
-    "percentile": 69.3861,
+    "percentile": 64.1945,
     "distance_to_top": 35.8,
     "value_source": "wind",
-    "percentile_window": "近10年·1685/2428",
-    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-10-26，近10年历史分位 71.12%（近10年·1727/2428）。序列已是最新，本次未重复写入。"
+    "percentile_window": "近10年·1559/2428",
+    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-10-29，近10年历史分位 64.19%（近10年·1559/2428）。本次已写入新交易日。"
   },
   "new_accounts": {
     "value": 191.19,
@@ -376,7 +376,7 @@
     "caliber_note": "口径（2026-09-17 起）：**权益类基金 = 股票基金 + 混合基金**，**剔除货币市场基金与债券基金**（货币/债券增长反映避险资金，与居民入市热情无关）。指标值 = 权益类份额单月净变动。数据取自中基协官网 PDF「公募基金市场数据」表。"
   },
   "turnover_rate": {
-    "value": 1.75,
+    "value": 1.403,
     "total_amount": 15565.2,
     "float_mv": 890096.5,
     "threshold": 3,
@@ -641,21 +641,21 @@
       },
       {
         "date": "2026-10-29",
-        "value": 1.75,
+        "value": 1.403,
         "amount": 15565.2
       }
     ],
     "collected_at": "2026-08-26 15:31:03",
-    "data_source": "tencent_gtimg (qt.gtimg.cn 上证指数+深证指数，深市为全市场汇总)（万得全A口径取数失败，降级）",
+    "data_source": "wind_edb_Y0136582 (万得全A换手率，周平均日换手率)",
     "total_mv": 1012672.0,
     "data_date": "2026-10-29",
-    "note": "⚠️ 口径降级：万得全A 取数失败，暂用「沪深两市成交额/流通市值」。同日沪深两市参考：成交额15565.2亿（沪7156.2亿+深8409.0亿）、流通市值890096.5亿。数据源：腾讯行情 qt.gtimg.cn，交易日2026-10-29，SCF 2026-10-29 自动抓取。",
+    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261023~20261029，Wind EDB Y0136582）；同日沪深口径参考 1.75%。同日沪深两市参考：成交额15565.2亿（沪7156.2亿+深8409.0亿）、流通市值890096.5亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-10-29，SCF 2026-10-30 自动抓取。",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ],
     "intraday": false,
-    "caliber": "tencent_hs_fallback",
-    "wind_avg_days": null
+    "caliber": "wind_all_a_weekly",
+    "wind_avg_days": 5
   },
   "sentiment": {
     "value": 3,
@@ -836,9 +836,9 @@
     "y10": 5.0342,
     "y2": 4.7182,
     "y30": 5.3539,
-    "y3m": 4.1073,
+    "y3m": 4.0965,
     "spread_2s10s_bp": 31.6,
-    "spread_10y3m_bp": 92.7,
+    "spread_10y3m_bp": 93.8,
     "status": "warning",
     "spread_status": "normal",
     "y30_status": "warning",
@@ -850,7 +850,7 @@
     "threshold_desc": "10Y-2Y利差<0即倒挂(衰退预警)；0~+25bp走平(周期后期预警)；>=+25bp为健康正斜率。30Y收益率≥5.0%接近历史极值(预警)、≥5.5%突破历史极值(危险)，长端高位属逃顶风险因素。",
     "threshold_type": "qualitative",
     "data_source": "sina bond.finance.sina.com.cn (daily close)",
-    "data_date": "2026-10-28",
+    "data_date": "2026-10-29",
     "history": [
       {
         "date": "2026-08-07",
@@ -1047,70 +1047,70 @@
       {
         "date": "2026-10-28",
         "value": 31.6
+      },
+      {
+        "date": "2026-10-29",
+        "value": 31.6
       }
     ],
-    "note": "美债10Y-2Y利差 +31.6bp（2026-10-28：10Y=5.034%、2Y=4.718%、30Y=5.354%），曲线正斜率、未倒挂。10Y-3M利差 +92.7bp。30Y风险：30Y=5.354% 接近历史极值(参考5.18%@2023-10)→预警",
+    "note": "美债10Y-2Y利差 +31.6bp（2026-10-29：10Y=5.034%、2Y=4.718%、30Y=5.354%），曲线正斜率、未倒挂。10Y-3M利差 +93.8bp。30Y风险：30Y=5.354% 接近历史极值(参考5.18%@2023-10)→预警",
     "health_ref": "健康利差结构=正斜率且走陡（10Y>2Y，利差一般+50~+150bp）。走平(0~+25bp)是周期后期预警；倒挂(<0)自1955年以来领先每次美国衰退6-18个月。倒挂后快速'再陡峭'(回正穿零)往往预示衰退临近/启动。",
     "sources": [
       "Sina Finance - US Treasury Yield (bond.finance.sina.com.cn)",
       "Federal Reserve / U.S. Treasury"
     ],
-    "evaluated_at": "2026-10-28",
+    "evaluated_at": "2026-10-29",
     "refresh_mode": "auto_sina",
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
-    "value": 48.4,
+    "value": 35.5,
     "unit": "亿元（今日净申赎）",
     "status": "normal",
-    "trend": "steady",
+    "trend": "increasing",
     "threshold_type": "quantitative",
     "threshold_desc": "当日放量（池成交额≥60日均值1.5倍）且净申赎绝对值日度分位≥P80 = 异动；异动且净赎回→预警（≥P95→危险）；放量净申购=托底、正常",
-    "data_date": "2026-10-28",
-    "vol_x_today": 1.23,
-    "net_today_pct": 48.8,
-    "is_spike": false,
+    "data_date": "2026-10-29",
+    "vol_x_today": 1.56,
+    "net_today_pct": 37.6,
+    "is_spike": true,
     "is_anomaly": false,
-    "anomaly_level": null,
+    "anomaly_level": "spike_only",
     "today_top": [
       {
-        "code": "159919",
-        "name": "沪深300ETF嘉实",
-        "flow_yi": 15.3,
-        "du_yi": 3.53
+        "code": "510300",
+        "name": "沪深300ETF华泰柏瑞",
+        "flow_yi": 45.3,
+        "du_yi": 10.98
       },
       {
-        "code": "512100",
-        "name": "中证1000ETF南方",
-        "flow_yi": 11.0,
-        "du_yi": 4.14
+        "code": "510500",
+        "name": "中证500ETF南方",
+        "flow_yi": -20.3,
+        "du_yi": -3.1
       },
       {
-        "code": "510050",
-        "name": "上证50ETF华夏",
-        "flow_yi": -6.8,
-        "du_yi": -2.35
+        "code": "510310",
+        "name": "沪深300ETF易方达",
+        "flow_yi": 9.4,
+        "du_yi": 2.35
       }
     ],
-    "net_sub_1w_yi": 1191.46,
-    "net_sub_1m_yi": 2406.45,
-    "net_sub_3m_yi": 2278.67,
-    "net_sub_1y_yi": -12339.85,
-    "net_sub_1y_yi_shares": -2785.75,
+    "net_sub_1w_yi": 962.67,
+    "net_sub_1m_yi": 2394.44,
+    "net_sub_3m_yi": 2068.13,
+    "net_sub_1y_yi": -12333.65,
+    "net_sub_1y_yi_shares": -2786.12,
     "vol_spike_threshold": 1.5,
-    "vol_spike_days_1y": 38,
-    "vol_spike_flow_1y": -9849.72,
-    "hold_amount_yi_est": 4841.0,
-    "hold_amount_trillion_est": 0.484,
+    "vol_spike_days_1y": 39,
+    "vol_spike_flow_1y": -9814.21,
+    "hold_amount_yi_est": 4829.0,
+    "hold_amount_trillion_est": 0.483,
     "hold_amount_yi_disclosed": 15035.0,
     "hold_report_date": "2025-12-31",
     "hold_is_estimate": true,
     "core_etf_count": 17,
     "history": [
-      {
-        "date": "2026-01-27",
-        "value": -531.33
-      },
       {
         "date": "2026-01-28",
         "value": -1452.08
@@ -1826,16 +1826,13 @@
       {
         "date": "2026-10-28",
         "value": 48.37
+      },
+      {
+        "date": "2026-10-29",
+        "value": 35.51
       }
     ],
     "daily": [
-      {
-        "date": "2026-09-23",
-        "du": 10.31,
-        "flow": 47.52,
-        "amt": 234.48,
-        "vol_x": 0.69
-      },
       {
         "date": "2026-09-24",
         "du": -4.36,
@@ -1968,26 +1965,33 @@
         "flow": 48.37,
         "amt": 402.18,
         "vol_x": 1.23
+      },
+      {
+        "date": "2026-10-29",
+        "du": 13.56,
+        "flow": 35.51,
+        "amt": 508.31,
+        "vol_x": 1.56
       }
     ],
-    "collected_at": "2026-10-29 10:00:33",
+    "collected_at": "2026-10-30 00:00:35",
     "data_source": "腾讯行情 qt.gtimg.cn（总份额/成交额/均价）+ 基金定期报告披露比例",
-    "note": "今日成交额 1.23x，无异常放量。今日净申赎（份额变化×成交均价）：+48 亿元（+12.8 亿份），主要 沪深300ETF嘉实 +15 亿、中证1000ETF南方 +11 亿、上证50ETF华夏 -7 亿。近一年累计 -12340 亿元、放量日 38 天贡献 -9850 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
+    "note": "今日**放量净申购**（成交额 1.56x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+36 亿元（+13.6 亿份），主要 沪深300ETF华泰柏瑞 +45 亿、中证500ETF南方 -20 亿、沪深300ETF易方达 +9 亿。近一年累计 -12334 亿元、放量日 39 天贡献 -9814 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
   },
   "_meta": {
-    "collected_at": "2026-10-29 18:00:37",
-    "date": "2026-10-29",
+    "collected_at": "2026-10-30 08:00:38",
+    "date": "2026-10-30",
     "source_policy": "凡从媒体/资讯获得的数据，必须在 sources 写明可核验的信息源与日期，并在 source_links 给出原始链接；链接须实际检索到并验证可达，禁止凭记忆拼写。口径与已有值不一致的来源不得用于更新，只能在 sources 里作为「未采用/口径不可比」说明保留。"
   },
   "_scoring": {
-    "score": 39.9,
+    "score": 39.6,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
       "pe_ttm": {
-        "score": 16.6,
+        "score": 16.3,
         "weight": 30,
-        "ratio": 0.555,
+        "ratio": 0.543,
         "status": "normal"
       },
       "new_accounts": {
