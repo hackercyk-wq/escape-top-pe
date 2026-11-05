@@ -1,6 +1,6 @@
 {
   "pe_ttm": {
-    "value": 31.5765,
+    "value": 32.7239,
     "threshold": 60,
     "unit": "倍",
     "status": "normal",
@@ -29,8 +29,8 @@
     ],
     "collected_at": "2026-10-29 10:26:04",
     "data_source": "wind_mcp index_data.get_index_fundamentals (881003.WI 万得全A除金融石化)",
-    "value_date": "2026-11-03",
-    "data_date": "2026-11-03",
+    "value_date": "2026-11-04",
+    "data_date": "2026-11-04",
     "value_note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-10-28，近10年历史分位 69.39%（1685/2428）。2026-10-29 10:23 手工补 10-27(32.7365)、10-28(33.2735) 两个交易日（每日 15:00 自动任务 10-27 起漏跑）。",
     "reference_wind_all_a": {
       "value": 21.8,
@@ -43,11 +43,11 @@
       "date": "2026-08-03",
       "note": "全市场PE(TTM)，来源：东方财富每日解盘"
     },
-    "percentile": 59.6701,
+    "percentile": 65.2927,
     "distance_to_top": 35.8,
     "value_source": "wind",
-    "percentile_window": "近10年·1448/2426",
-    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-11-03，近10年历史分位 59.67%（近10年·1448/2426）。本次已写入新交易日。"
+    "percentile_window": "近10年·1585/2427",
+    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-11-04，近10年历史分位 65.29%（近10年·1585/2427）。本次已写入新交易日。"
   },
   "new_accounts": {
     "value": 191.19,
@@ -685,7 +685,7 @@
     "data_source": "wind_edb_Y0136582 (万得全A换手率，周平均日换手率)",
     "total_mv": 1025509.3,
     "data_date": "2026-11-04",
-    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261029~20261104，Wind EDB Y0136582）；同日沪深口径参考 2.26%。同日沪深两市参考：成交额20376.9亿（沪9532.6亿+深10844.3亿）、流通市值900175.9亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-11-04，SCF 2026-11-04 自动抓取。",
+    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261029~20261104，Wind EDB Y0136582）；同日沪深口径参考 2.26%。同日沪深两市参考：成交额20376.9亿（沪9532.6亿+深10844.3亿）、流通市值900175.9亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-11-04，SCF 2026-11-05 自动抓取。",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ],
@@ -1111,57 +1111,53 @@
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
-    "value": 564.6,
+    "value": 457.9,
     "unit": "亿元（今日净申赎）",
     "status": "normal",
     "trend": "increasing",
     "threshold_type": "quantitative",
     "threshold_desc": "当日放量（池成交额≥60日均值1.5倍）且净申赎绝对值日度分位≥P80 = 异动；异动且净赎回→预警（≥P95→危险）；放量净申购=托底、正常",
-    "data_date": "2026-11-03",
-    "vol_x_today": 3.33,
-    "net_today_pct": 96.8,
+    "data_date": "2026-11-04",
+    "vol_x_today": 2.49,
+    "net_today_pct": 94.8,
     "is_spike": true,
     "is_anomaly": true,
-    "anomaly_level": "extreme",
+    "anomaly_level": "obvious",
     "today_top": [
       {
-        "code": "510300",
-        "name": "沪深300ETF华泰柏瑞",
-        "flow_yi": 129.9,
-        "du_yi": 31.86
+        "code": "159915",
+        "name": "创业板ETF易方达",
+        "flow_yi": 93.7,
+        "du_yi": 37.73
       },
       {
-        "code": "510050",
-        "name": "上证50ETF华夏",
-        "flow_yi": 103.1,
-        "du_yi": 35.95
+        "code": "510500",
+        "name": "中证500ETF南方",
+        "flow_yi": 75.7,
+        "du_yi": 11.61
       },
       {
-        "code": "510310",
-        "name": "沪深300ETF易方达",
-        "flow_yi": 74.0,
-        "du_yi": 18.67
+        "code": "512100",
+        "name": "中证1000ETF南方",
+        "flow_yi": 73.8,
+        "du_yi": 28.44
       }
     ],
-    "net_sub_1w_yi": 1139.7,
-    "net_sub_1m_yi": 3380.01,
-    "net_sub_3m_yi": 2939.41,
-    "net_sub_1y_yi": -11240.02,
-    "net_sub_1y_yi_shares": -2464.86,
+    "net_sub_1w_yi": 1549.22,
+    "net_sub_1m_yi": 3817.59,
+    "net_sub_3m_yi": 3452.2,
+    "net_sub_1y_yi": -10728.01,
+    "net_sub_1y_yi_shares": -2317.59,
     "vol_spike_threshold": 1.5,
-    "vol_spike_days_1y": 41,
-    "vol_spike_flow_1y": -8901.63,
-    "hold_amount_yi_est": 5565.0,
-    "hold_amount_trillion_est": 0.556,
+    "vol_spike_days_1y": 42,
+    "vol_spike_flow_1y": -8443.74,
+    "hold_amount_yi_est": 6001.0,
+    "hold_amount_trillion_est": 0.6,
     "hold_amount_yi_disclosed": 15035.0,
     "hold_report_date": "2025-12-31",
     "hold_is_estimate": true,
     "core_etf_count": 17,
     "history": [
-      {
-        "date": "2026-02-02",
-        "value": -239.2
-      },
       {
         "date": "2026-02-03",
         "value": 81.9
@@ -1877,16 +1873,13 @@
       {
         "date": "2026-11-03",
         "value": 564.65
+      },
+      {
+        "date": "2026-11-04",
+        "value": 457.89
       }
     ],
     "daily": [
-      {
-        "date": "2026-09-30",
-        "du": 8.04,
-        "flow": 20.31,
-        "amt": 218.18,
-        "vol_x": 0.65
-      },
       {
         "date": "2026-10-08",
         "du": 17.45,
@@ -2019,27 +2012,33 @@
         "flow": 564.65,
         "amt": 1080.38,
         "vol_x": 3.33
+      },
+      {
+        "date": "2026-11-04",
+        "du": 131.8,
+        "flow": 457.89,
+        "amt": 839.06,
+        "vol_x": 2.49
       }
     ],
-    "collected_at": "2026-11-04 00:00:38",
+    "collected_at": "2026-11-05 00:00:33",
     "data_source": "腾讯行情 qt.gtimg.cn（总份额/成交额/均价）+ 基金定期报告披露比例",
-    "note": "今日**放量净申购**（成交额 3.33x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+565 亿元（+164.4 亿份），主要 沪深300ETF华泰柏瑞 +130 亿、上证50ETF华夏 +103 亿、沪深300ETF易方达 +74 亿。近一年累计 -11240 亿元、放量日 41 天贡献 -8902 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。",
-    "stale_note": "本次更新失败（IncompleteRead(665411 bytes read, 8652 more expected)），沿用 2026-11-03 的值"
+    "note": "今日**放量净申购**（成交额 2.49x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+458 亿元（+131.8 亿份），主要 创业板ETF易方达 +94 亿、中证500ETF南方 +76 亿、中证1000ETF南方 +74 亿。近一年累计 -10728 亿元、放量日 42 天贡献 -8444 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
   },
   "_meta": {
-    "collected_at": "2026-11-04 18:00:58",
-    "date": "2026-11-04",
+    "collected_at": "2026-11-05 08:00:36",
+    "date": "2026-11-05",
     "source_policy": "凡从媒体/资讯获得的数据，必须在 sources 写明可核验的信息源与日期，并在 source_links 给出原始链接；链接须实际检索到并验证可达，禁止凭记忆拼写。口径与已有值不一致的来源不得用于更新，只能在 sources 里作为「未采用/口径不可比」说明保留。"
   },
   "_scoring": {
-    "score": 36.2,
+    "score": 36.8,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
       "pe_ttm": {
-        "score": 15.8,
+        "score": 16.4,
         "weight": 30,
-        "ratio": 0.526,
+        "ratio": 0.545,
         "status": "normal"
       },
       "new_accounts": {
