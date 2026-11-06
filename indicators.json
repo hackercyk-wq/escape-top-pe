@@ -1,6 +1,6 @@
 {
   "pe_ttm": {
-    "value": 32.7239,
+    "value": 33.0381,
     "threshold": 60,
     "unit": "倍",
     "status": "normal",
@@ -29,8 +29,8 @@
     ],
     "collected_at": "2026-10-29 10:26:04",
     "data_source": "wind_mcp index_data.get_index_fundamentals (881003.WI 万得全A除金融石化)",
-    "value_date": "2026-11-04",
-    "data_date": "2026-11-04",
+    "value_date": "2026-11-05",
+    "data_date": "2026-11-05",
     "value_note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-10-28，近10年历史分位 69.39%（1685/2428）。2026-10-29 10:23 手工补 10-27(32.7365)、10-28(33.2735) 两个交易日（每日 15:00 自动任务 10-27 起漏跑）。",
     "reference_wind_all_a": {
       "value": 21.8,
@@ -43,11 +43,11 @@
       "date": "2026-08-03",
       "note": "全市场PE(TTM)，来源：东方财富每日解盘"
     },
-    "percentile": 65.2927,
+    "percentile": 68.15,
     "distance_to_top": 35.8,
     "value_source": "wind",
-    "percentile_window": "近10年·1585/2427",
-    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-11-04，近10年历史分位 65.29%（近10年·1585/2427）。本次已写入新交易日。"
+    "percentile_window": "近10年·1655/2428",
+    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-11-05，近10年历史分位 68.15%（近10年·1655/2428）。本次已写入新交易日。"
   },
   "new_accounts": {
     "value": 150.06,
@@ -121,7 +121,7 @@
   "margin_ratio": {
     "value": 2.48,
     "margin_balance": 22534.5,
-    "float_mv": 906983.2,
+    "float_mv": 906983.3,
     "trade_ratio": null,
     "threshold": 3,
     "unit": "%",
@@ -346,7 +346,7 @@
     "rqye": 286.2,
     "liangrong_total": 26575.4,
     "margin_balance_date": "2026-11-04",
-    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额22534.5亿（东方财富数据中心，4487只标的求和，数据日2026-11-04）/流通市值906983.2亿（与换手率同口径）。SCF 自动抓取。"
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额22534.5亿（东方财富数据中心，4487只标的求和，数据日2026-11-04）/流通市值906983.3亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": 264.87,
@@ -403,7 +403,7 @@
   "turnover_rate": {
     "value": 1.6299,
     "total_amount": 21179.5,
-    "float_mv": 906983.2,
+    "float_mv": 906983.3,
     "threshold": 3,
     "unit": "%",
     "status": "normal",
@@ -697,9 +697,9 @@
     ],
     "collected_at": "2026-08-26 15:31:03",
     "data_source": "wind_edb_Y0136582 (万得全A换手率，周平均日换手率)",
-    "total_mv": 1032593.8,
+    "total_mv": 1032594.1,
     "data_date": "2026-11-05",
-    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261030~20261105，Wind EDB Y0136582）；同日沪深口径参考 2.34%。同日沪深两市参考：成交额21179.5亿（沪9797.1亿+深11382.4亿）、流通市值906983.2亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-11-05，SCF 2026-11-05 自动抓取。",
+    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261030~20261105，Wind EDB Y0136582）；同日沪深口径参考 2.34%。同日沪深两市参考：成交额21179.5亿（沪9797.1亿+深11382.4亿）、流通市值906983.3亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-11-05，SCF 2026-11-06 自动抓取。",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ],
@@ -1129,19 +1129,25 @@
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
-    "value": 49.1,
+    "value": 108.8,
     "unit": "亿元（今日净申赎）",
     "status": "normal",
     "trend": "increasing",
     "threshold_type": "quantitative",
     "threshold_desc": "当日放量（池成交额≥60日均值1.5倍）且净申赎绝对值日度分位≥P80 = 异动；异动且净赎回→预警（≥P95→危险）；放量净申购=托底、正常",
     "data_date": "2026-11-05",
-    "vol_x_today": 2.24,
-    "net_today_pct": 48.4,
+    "vol_x_today": 1.69,
+    "net_today_pct": 72.8,
     "is_spike": true,
     "is_anomaly": false,
     "anomaly_level": "spike_only",
     "today_top": [
+      {
+        "code": "159915",
+        "name": "创业板ETF易方达",
+        "flow_yi": 50.4,
+        "du_yi": 19.68
+      },
       {
         "code": "159845",
         "name": "华夏中证1000ETF",
@@ -1149,28 +1155,22 @@
         "du_yi": 10.11
       },
       {
-        "code": "159922",
-        "name": "中证500ETF嘉实",
-        "flow_yi": 12.5,
-        "du_yi": 4.59
-      },
-      {
-        "code": "159952",
-        "name": "创业板ETF广发",
-        "flow_yi": 4.9,
-        "du_yi": 3.14
+        "code": "588080",
+        "name": "科创50ETF易方达",
+        "flow_yi": 14.7,
+        "du_yi": 11.31
       }
     ],
-    "net_sub_1w_yi": 1562.85,
-    "net_sub_1m_yi": 3825.31,
-    "net_sub_3m_yi": 3614.39,
-    "net_sub_1y_yi": -10689.07,
-    "net_sub_1y_yi_shares": -2299.07,
+    "net_sub_1w_yi": 1622.52,
+    "net_sub_1m_yi": 3884.98,
+    "net_sub_3m_yi": 3674.06,
+    "net_sub_1y_yi": -10629.4,
+    "net_sub_1y_yi_shares": -2272.59,
     "vol_spike_threshold": 1.5,
     "vol_spike_days_1y": 43,
-    "vol_spike_flow_1y": -8394.6,
-    "hold_amount_yi_est": 6059.0,
-    "hold_amount_trillion_est": 0.606,
+    "vol_spike_flow_1y": -8334.93,
+    "hold_amount_yi_est": 6172.0,
+    "hold_amount_trillion_est": 0.617,
     "hold_amount_yi_disclosed": 15035.0,
     "hold_report_date": "2025-12-31",
     "hold_is_estimate": true,
@@ -1894,7 +1894,7 @@
       },
       {
         "date": "2026-11-05",
-        "value": 49.14
+        "value": 108.81
       }
     ],
     "daily": [
@@ -2033,30 +2033,30 @@
       },
       {
         "date": "2026-11-05",
-        "du": 19.3,
-        "flow": 49.14,
-        "amt": 770.84,
-        "vol_x": 2.24
+        "du": 45.78,
+        "flow": 108.81,
+        "amt": 583.66,
+        "vol_x": 1.69
       }
     ],
-    "collected_at": "2026-11-05 10:00:53",
+    "collected_at": "2026-11-06 00:00:38",
     "data_source": "腾讯行情 qt.gtimg.cn（总份额/成交额/均价）+ 基金定期报告披露比例",
-    "note": "今日**放量净申购**（成交额 2.24x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+49 亿元（+19.3 亿份），主要 华夏中证1000ETF +28 亿、中证500ETF嘉实 +12 亿、创业板ETF广发 +5 亿。近一年累计 -10689 亿元、放量日 43 天贡献 -8395 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
+    "note": "今日**放量净申购**（成交额 1.69x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+109 亿元（+45.8 亿份），主要 创业板ETF易方达 +50 亿、华夏中证1000ETF +28 亿、科创50ETF易方达 +15 亿。近一年累计 -10629 亿元、放量日 43 天贡献 -8335 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
   },
   "_meta": {
-    "collected_at": "2026-11-05 18:00:57",
-    "date": "2026-11-05",
+    "collected_at": "2026-11-06 08:00:41",
+    "date": "2026-11-06",
     "source_policy": "凡从媒体/资讯获得的数据，必须在 sources 写明可核验的信息源与日期，并在 source_links 给出原始链接；链接须实际检索到并验证可达，禁止凭记忆拼写。口径与已有值不一致的来源不得用于更新，只能在 sources 里作为「未采用/口径不可比」说明保留。"
   },
   "_scoring": {
-    "score": 36.8,
+    "score": 36.9,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
       "pe_ttm": {
-        "score": 16.4,
+        "score": 16.5,
         "weight": 30,
-        "ratio": 0.545,
+        "ratio": 0.551,
         "status": "normal"
       },
       "new_accounts": {
