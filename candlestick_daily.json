@@ -1,13 +1,13 @@
 {
-  "data_date": "2026-11-06",
-  "updated_at": "2026/11/09 00:00:21",
+  "data_date": "2026-11-09",
+  "updated_at": "2026/11/09 10:00:21",
   "source": "新浪财经/腾讯财经 日K线（蜡烛图skill patterns.py 计算）",
   "report_url": "https://a87e04ef15ee40c68e59430b487d9294.app.codebuddy.work/",
   "window": 30,
-  "bullish": 1,
-  "bearish": 1,
+  "bullish": 0,
+  "bearish": 0,
   "strong": 0,
-  "dominant_patterns": "看涨捉腰带线×1、向下跳空窗口×1",
+  "dominant_patterns": "十字星×1",
   "indices": [
     "上证指数",
     "深证成指",
