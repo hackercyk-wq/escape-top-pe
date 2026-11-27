@@ -1,6 +1,6 @@
 {
   "pe_ttm": {
-    "value": 29.4282,
+    "value": 31.2798,
     "threshold": 60,
     "unit": "倍",
     "status": "normal",
@@ -29,8 +29,8 @@
     ],
     "collected_at": "2026-10-29 10:26:04",
     "data_source": "wind_mcp index_data.get_index_fundamentals (881003.WI 万得全A除金融石化)",
-    "value_date": "2026-11-26",
-    "data_date": "2026-11-26",
+    "value_date": "2026-11-27",
+    "data_date": "2026-11-27",
     "value_note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-10-28，近10年历史分位 69.39%（1685/2428）。2026-10-29 10:23 手工补 10-27(32.7365)、10-28(33.2735) 两个交易日（每日 15:00 自动任务 10-27 起漏跑）。",
     "reference_wind_all_a": {
       "value": 21.8,
@@ -43,11 +43,11 @@
       "date": "2026-08-03",
       "note": "全市场PE(TTM)，来源：东方财富每日解盘"
     },
-    "percentile": 48.3725,
+    "percentile": 58.3608,
     "distance_to_top": 35.8,
     "value_source": "wind",
-    "percentile_window": "近10年·1175/2428",
-    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-11-26，近10年历史分位 48.37%（近10年·1175/2428）。序列已是最新，本次未重复写入。"
+    "percentile_window": "近10年·1418/2429",
+    "note": "万得全A(除金融、石油石化) PE-TTM，Wind 每日自动采集（SCF collect_pe_daily）。数据日 2026-11-27，近10年历史分位 58.36%（近10年·1418/2429）。本次已写入新交易日。"
   },
   "new_accounts": {
     "value": 150.06,
@@ -119,9 +119,9 @@
     ]
   },
   "margin_ratio": {
-    "value": 2.52,
-    "margin_balance": 21039.6,
-    "float_mv": 835380.4,
+    "value": 2.39,
+    "margin_balance": 20882.3,
+    "float_mv": 874009.2,
     "trade_ratio": null,
     "threshold": 3,
     "unit": "%",
@@ -367,14 +367,18 @@
       {
         "date": "2026-11-25",
         "value": 21039.6
+      },
+      {
+        "date": "2026-11-26",
+        "value": 20882.3
       }
     ],
     "collected_at": "2026-08-26 15:31:03",
     "data_source": "eastmoney_datacenter (融资余额) + 换手率同口径流通市值",
-    "rqye": 290.3,
+    "rqye": 290.6,
     "liangrong_total": 26575.4,
-    "margin_balance_date": "2026-11-25",
-    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额21039.6亿（东方财富数据中心，4492只标的求和，数据日2026-11-25）/流通市值835380.4亿（与换手率同口径）。SCF 自动抓取。"
+    "margin_balance_date": "2026-11-26",
+    "note": "融资余额占流通市值=融资余额/流通市值×100。融资余额20882.3亿（东方财富数据中心，4492只标的求和，数据日2026-11-26）/流通市值874009.2亿（与换手率同口径）。SCF 自动抓取。"
   },
   "fund_shares": {
     "value": 264.87,
@@ -429,9 +433,9 @@
     "caliber_note": "口径（2026-09-17 起）：**权益类基金 = 股票基金 + 混合基金**，**剔除货币市场基金与债券基金**（货币/债券增长反映避险资金，与居民入市热情无关）。指标值 = 权益类份额单月净变动。数据取自中基协官网 PDF「公募基金市场数据」表。"
   },
   "turnover_rate": {
-    "value": 1.4531,
-    "total_amount": 13173.8,
-    "float_mv": 835380.4,
+    "value": 1.5426,
+    "total_amount": 19997.9,
+    "float_mv": 874009.2,
     "threshold": 3,
     "unit": "%",
     "status": "normal",
@@ -756,13 +760,18 @@
         "date": "2026-11-26",
         "value": 1.4531,
         "amount": 13173.8
+      },
+      {
+        "date": "2026-11-27",
+        "value": 1.5426,
+        "amount": 19997.9
       }
     ],
     "collected_at": "2026-08-26 15:31:03",
     "data_source": "wind_edb_Y0136582 (万得全A换手率，周平均日换手率)",
-    "total_mv": 942214.9,
-    "data_date": "2026-11-26",
-    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261120~20261126，Wind EDB Y0136582）；同日沪深口径参考 1.58%。同日沪深两市参考：成交额13173.8亿（沪6133.3亿+深7040.4亿）、流通市值835380.4亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-11-26，SCF 2026-11-27 自动抓取。",
+    "total_mv": 990817.9,
+    "data_date": "2026-11-27",
+    "note": "口径：**万得全A 周平均日换手率**（近5个交易日均值，区间 20261123~20261127，Wind EDB Y0136582）；同日沪深口径参考 2.29%。同日沪深两市参考：成交额19997.9亿（沪9297.8亿+深10700.2亿）、流通市值874009.2亿。数据源：Wind EDB Y0136582（万得全A指数:换手率），交易日2026-11-27，SCF 2026-11-27 自动抓取。",
     "corrections": [
       "2026-08-15 修正：原「2026-08-14: 2.55%/25509.2亿」实为 08-13 数据错记，已删除；原「2026-08-15: 2.14%/21428.4亿」实为 08-14 数据（08-15 为周六无交易），已归位到 08-14。"
     ],
@@ -1228,57 +1237,53 @@
     "refresh_note": "新浪财经美债收益率每日收盘（国内可达、腾讯云直连），覆盖 2Y/10Y/30Y/3M，自动算利差，无需海外中继。"
   },
   "national_team_etf": {
-    "value": 111.1,
+    "value": 5.2,
     "unit": "亿元（今日净申赎）",
     "status": "normal",
-    "trend": "steady",
+    "trend": "increasing",
     "threshold_type": "quantitative",
     "threshold_desc": "当日放量（池成交额≥60日均值1.5倍）且净申赎绝对值日度分位≥P80 = 异动；异动且净赎回→预警（≥P95→危险）；放量净申购=托底、正常",
-    "data_date": "2026-11-26",
-    "vol_x_today": 1.1,
-    "net_today_pct": 72.0,
-    "is_spike": false,
+    "data_date": "2026-11-27",
+    "vol_x_today": 1.76,
+    "net_today_pct": 5.2,
+    "is_spike": true,
     "is_anomaly": false,
-    "anomaly_level": null,
+    "anomaly_level": "spike_only",
     "today_top": [
       {
-        "code": "512100",
-        "name": "中证1000ETF南方",
-        "flow_yi": 43.6,
-        "du_yi": 19.3
+        "code": "159952",
+        "name": "创业板ETF广发",
+        "flow_yi": 5.3,
+        "du_yi": 3.69
       },
       {
-        "code": "159915",
-        "name": "创业板ETF易方达",
-        "flow_yi": 31.5,
-        "du_yi": 14.23
+        "code": "159977",
+        "name": "创业板ETF天弘",
+        "flow_yi": 1.6,
+        "du_yi": 1.3
       },
       {
-        "code": "510310",
-        "name": "沪深300ETF易方达",
-        "flow_yi": 19.5,
-        "du_yi": 5.04
+        "code": "159845",
+        "name": "华夏中证1000ETF",
+        "flow_yi": -1.1,
+        "du_yi": -0.45
       }
     ],
-    "net_sub_1w_yi": 2308.82,
-    "net_sub_1m_yi": 5364.19,
-    "net_sub_3m_yi": 6609.76,
-    "net_sub_1y_yi": -8207.79,
-    "net_sub_1y_yi_shares": -1439.97,
+    "net_sub_1w_yi": 906.99,
+    "net_sub_1m_yi": 5315.81,
+    "net_sub_3m_yi": 6667.01,
+    "net_sub_1y_yi": -8212.8,
+    "net_sub_1y_yi_shares": -1437.02,
     "vol_spike_threshold": 1.5,
-    "vol_spike_days_1y": 45,
-    "vol_spike_flow_1y": -6540.65,
-    "hold_amount_yi_est": 7462.0,
-    "hold_amount_trillion_est": 0.746,
+    "vol_spike_days_1y": 46,
+    "vol_spike_flow_1y": -6535.43,
+    "hold_amount_yi_est": 7597.0,
+    "hold_amount_trillion_est": 0.76,
     "hold_amount_yi_disclosed": 15035.0,
     "hold_report_date": "2025-12-31",
     "hold_is_estimate": true,
     "core_etf_count": 17,
     "history": [
-      {
-        "date": "2026-02-13",
-        "value": -178.94
-      },
       {
         "date": "2026-02-24",
         "value": -30.23
@@ -1994,16 +1999,13 @@
       {
         "date": "2026-11-26",
         "value": 111.1
+      },
+      {
+        "date": "2026-11-27",
+        "value": 5.22
       }
     ],
     "daily": [
-      {
-        "date": "2026-10-20",
-        "du": 15.47,
-        "flow": 53.6,
-        "amt": 446.3,
-        "vol_x": 1.39
-      },
       {
         "date": "2026-10-21",
         "du": 37.94,
@@ -2136,26 +2138,33 @@
         "flow": 111.1,
         "amt": 421.98,
         "vol_x": 1.1
+      },
+      {
+        "date": "2026-11-27",
+        "du": 4.32,
+        "flow": 5.22,
+        "amt": 680.47,
+        "vol_x": 1.76
       }
     ],
-    "collected_at": "2026-11-27 00:00:59",
+    "collected_at": "2026-11-27 10:04:12",
     "data_source": "腾讯行情 qt.gtimg.cn（总份额/成交额/均价）+ 基金定期报告披露比例",
-    "note": "今日成交额 1.10x，无异常放量。今日净申赎（份额变化×成交均价）：+111 亿元（+47.0 亿份），主要 中证1000ETF南方 +44 亿、创业板ETF易方达 +32 亿、沪深300ETF易方达 +20 亿。近一年累计 -8208 亿元、放量日 45 天贡献 -6541 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
+    "note": "今日**放量净申购**（成交额 1.76x）= 国家队在买/托底。今日净申赎（份额变化×成交均价）：+5 亿元（+4.3 亿份），主要 创业板ETF广发 +5 亿、创业板ETF天弘 +2 亿、华夏中证1000ETF -1 亿。近一年累计 -8213 亿元、放量日 46 天贡献 -6535 亿（背景参考）。持仓为推算值（最新披露比例×当前份额×价，锚点 2025-12-31），比例半年一更、非实时。"
   },
   "_meta": {
-    "collected_at": "2026-11-27 08:01:01",
+    "collected_at": "2026-11-27 18:04:15",
     "date": "2026-11-27",
     "source_policy": "凡从媒体/资讯获得的数据，必须在 sources 写明可核验的信息源与日期，并在 source_links 给出原始链接；链接须实际检索到并验证可达，禁止凭记忆拼写。口径与已有值不一致的来源不得用于更新，只能在 sources 里作为「未采用/口径不可比」说明保留。"
   },
   "_scoring": {
-    "score": 35.2,
+    "score": 36.1,
     "max_score": 100,
     "overall_status": "normal",
     "details": {
       "pe_ttm": {
-        "score": 14.7,
+        "score": 15.6,
         "weight": 30,
-        "ratio": 0.49,
+        "ratio": 0.521,
         "status": "normal"
       },
       "new_accounts": {
